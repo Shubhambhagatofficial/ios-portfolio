@@ -10,12 +10,17 @@ const AppDetail = () => {
   const navigate = useNavigate()
   const app = getAllApps().find(a => a.id === parseInt(id))
 
+  const handleBackClick = () => {
+    // Navigate back - scroll position will be restored by AppsSection
+    navigate('/')
+  }
+
   if (!app) {
     return (
       <div className="app-detail-container">
         <div className="app-detail-content">
           <h1>App not found</h1>
-          <button onClick={() => navigate('/')} className="back-button">
+          <button onClick={handleBackClick} className="back-button">
             Go Back
           </button>
         </div>
@@ -26,7 +31,7 @@ const AppDetail = () => {
   return (
     <div className="app-detail-container">
       <div className="app-detail-content">
-        <button onClick={() => navigate('/')} className="back-button">
+        <button onClick={handleBackClick} className="back-button">
           ← Back to Portfolio
         </button>
 

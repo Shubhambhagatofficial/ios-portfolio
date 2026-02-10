@@ -1,9 +1,32 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import AppCard from './AppCard'
 import { builtFromScratch, contributedHeavily } from '../data/appsData'
 import './AppsSection.css'
 
 const AppsSection = () => {
+  const location = useLocation()
+
+  useEffect(() => {
+    // Restore scroll position when coming back from detail page
+    if (location.pathname === '/') {
+      const savedScrollPosition = sessionStorage.getItem('homeScrollPosition')
+      if (savedScrollPosition) {
+        // Use requestAnimationFrame to ensure the page has rendered
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            window.scrollTo({
+              top: parseInt(savedScrollPosition, 10),
+              behavior: 'auto'
+            })
+            // Clear the saved position after restoring
+            sessionStorage.removeItem('homeScrollPosition')
+          })
+        })
+      }
+    }
+  }, [location.pathname])
+
   return (
     <section className="apps-section">
       <div className="apps-container">

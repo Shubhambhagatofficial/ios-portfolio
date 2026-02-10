@@ -10,6 +10,8 @@ const AppCard = ({ app }) => {
     if (e.target.closest('.app-links')) {
       return
     }
+    // Save scroll position before navigating
+    sessionStorage.setItem('homeScrollPosition', window.scrollY.toString())
     navigate(`/app/${app.id}`)
   }
 
