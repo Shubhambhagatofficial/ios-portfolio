@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import './AppDetail.css'
 
@@ -9,6 +9,11 @@ const AppDetail = () => {
   const { id } = useParams()
   const navigate = useNavigate()
   const app = getAllApps().find(a => a.id === parseInt(id))
+
+  // Scroll to top when detail page opens
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [id])
 
   const handleBackClick = () => {
     // Navigate back - scroll position will be restored by AppsSection
