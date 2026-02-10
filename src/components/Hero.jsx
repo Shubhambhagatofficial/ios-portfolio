@@ -1,10 +1,12 @@
 import React from 'react'
+import Menu from './Menu'
 import ThemeToggle from './ThemeToggle'
 import './Hero.css'
 
 const Hero = () => {
   return (
     <section className="hero">
+      <Menu />
       <ThemeToggle />
       <div className="hero-container">
         <div className="hero-content">

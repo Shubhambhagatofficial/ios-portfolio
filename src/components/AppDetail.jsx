@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
+import Menu from './Menu'
 import ThemeToggle from './ThemeToggle'
 import './AppDetail.css'
 
@@ -24,6 +25,7 @@ const AppDetail = () => {
   if (!app) {
     return (
       <div className="app-detail-container">
+        <Menu />
         <ThemeToggle />
         <div className="app-detail-content">
           <h1>App not found</h1>
@@ -37,6 +39,7 @@ const AppDetail = () => {
 
   return (
     <div className="app-detail-container">
+      <Menu />
       <ThemeToggle />
       <div className="app-detail-content">
         <button onClick={handleBackClick} className="back-button">
