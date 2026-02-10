@@ -10,8 +10,14 @@
   aspect-ratio: 1 / 1;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  min-height: 280px;
+  height: auto;
+  width: 100%;
+}
+
+/* Ensure non-hovered cards maintain square shape */
+.apps-grid:has(.app-card:hover) .app-card:not(:hover) {
+  aspect-ratio: 1 / 1;
+  height: auto;
 }
 
 .app-card::before {
@@ -32,6 +38,7 @@
   box-shadow: 0 20px 40px var(--shadow-hover);
   z-index: 10;
   aspect-ratio: auto;
+  height: auto;
   min-height: 450px;
 }
 
