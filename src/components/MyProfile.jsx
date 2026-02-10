@@ -10,7 +10,7 @@ const MyProfile = () => {
         <div className="profile-content">
           <div className="profile-text">
             <p className="profile-description">
-              A seasoned iOS developer with over 4.5 years of experience developing large-scale applications. 
+              I have around 5 years of experience developing large-scale applications in iOS.
               Expertise in Swift and SwiftUI, leading architecture and migrations for Angel One, Furlenco, and CREX. 
               Developed and published apps serving 7M+ daily active users.
             </p>
@@ -35,16 +35,42 @@ const MyProfile = () => {
             <div className="profile-skills">
               <h3>Key Skills</h3>
               <div className="skills-list">
-                <span className="skill-tag">Swift</span>
                 <span className="skill-tag">SwiftUI</span>
                 <span className="skill-tag">UIKit</span>
-                <span className="skill-tag">iOS Architecture</span>
                 <span className="skill-tag">MVVM</span>
+                <span className="skill-tag">VIPER</span>
+                <span className="skill-tag">Go</span>
+                <span className="skill-tag">Claude AI</span>
+                <span className="skill-tag">AI Tools</span>
+                <span className="skill-tag">SWIFT</span>
+                <span className="skill-tag">Spring Boot</span>
+                <span className="skill-tag">Team Leader</span>
+                <span className="skill-tag">App Management</span>
+                <span className="skill-tag">Cursor</span>
                 <span className="skill-tag">Combine</span>
                 <span className="skill-tag">Core Data</span>
                 <span className="skill-tag">REST APIs</span>
                 <span className="skill-tag">Git</span>
                 <span className="skill-tag">CI/CD</span>
+              </div>
+            </div>
+
+            <div className="profile-education">
+              <h3>Education</h3>
+              <div className="education-item">
+                <div className="education-header">
+                  <h4>B.Tech. in Computer Science and Engineering</h4>
+                  <span className="education-year">2017-2021</span>
+                </div>
+                <p className="education-institution">College of Engineering Roorkee (COER)</p>
+              </div>
+            </div>
+
+            <div className="profile-languages">
+              <h3>Languages</h3>
+              <div className="languages-list">
+                <span className="language-tag">Hindi</span>
+                <span className="language-tag">English</span>
               </div>
             </div>
           </div>

@@ -117,6 +117,99 @@
   transform: translateY(-2px);
 }
 
+.profile-education {
+  margin-top: 2rem;
+}
+
+.profile-education h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+}
+
+.education-item {
+  padding: 2rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.education-item:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-color);
+  box-shadow: 0 8px 24px var(--shadow-hover);
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.education-header h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+  flex: 1;
+}
+
+.education-year {
+  font-size: 1rem;
+  color: var(--accent-color);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.education-institution {
+  font-size: 1rem;
+  color: var(--text-tertiary);
+  margin: 0;
+}
+
+.profile-languages {
+  margin-top: 2rem;
+}
+
+.profile-languages h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+}
+
+.languages-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.language-tag {
+  background: rgba(88, 86, 214, 0.1);
+  color: var(--accent-secondary);
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  border: 1px solid rgba(88, 86, 214, 0.2);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.language-tag:hover {
+  background: rgba(88, 86, 214, 0.2);
+  transform: translateY(-2px);
+}
+
 @media (max-width: 768px) {
   .profile-section {
     padding: 4rem 1.5rem;
@@ -145,6 +238,36 @@
   }
 
   .skill-tag {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .education-item {
+    padding: 1.5rem;
+  }
+
+  .education-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .education-header h4 {
+    font-size: 1.1rem;
+  }
+
+  .education-year {
+    font-size: 0.9rem;
+  }
+
+  .education-institution {
+    font-size: 0.9rem;
+  }
+
+  .languages-list {
+    gap: 0.75rem;
+  }
+
+  .language-tag {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
   }
