@@ -6,7 +6,7 @@ export const builtFromScratch = [
     name: 'CREX - Just Cricket',
     description: 'A comprehensive live cricket score and analysis app featuring real-time match updates, ball-by-ball commentary, exclusive cricket videos, fantasy tips, detailed scorecards, and in-depth player statistics. Follow all international and domestic cricket matches with viral highlights and expert analysis.',
     icon: 'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9e/b9/65/9eb96515-3711-a217-73e6-8265c69f5e36/Placeholder.mill/400x400bb-75.webp',
-    technologies: ['Swift', 'SwiftUI', 'UIKit', 'Core Data', 'REST APIs'],
+    technologies: ['Swift', 'UIKit', 'Core Data', 'REST APIs'],
     appStoreLink: 'https://apps.apple.com/us/app/crex-just-cricket/id1370408703',
     githubLink: '',
     workedOn: [
@@ -23,7 +23,7 @@ export const builtFromScratch = [
     name: 'OneCricket',
     description: 'A lightning-fast live cricket score app with ball-to-ball updates, live commentary, complete scorecards with auto-refresh, match info with playing XI and team squads, interactive fixtures categorized by date/series/team, series-based matches and news, tournament points tables, and latest cricket news. Features dark theme and covers all International T20s, ODIs, Tests, Tours, and Leagues.',
     icon: 'https://play-lh.googleusercontent.com/f5_w5_hXyQUd0eBgavdNY96Z7V76DcyuKSFO26Z57DPFiQDePmaRrK6ijfhNgmf3Mkc=w480-h960',
-    technologies: ['Swift', 'SwiftUI', 'UIKit', 'REST APIs'],
+    technologies: ['Swift', 'UIKit', 'REST APIs'],
     appStoreLink: 'https://apps.apple.com/af/app/onecricket/id1502683595',
     githubLink: '',
     workedOn: [
@@ -40,7 +40,7 @@ export const builtFromScratch = [
     name: 'ACEapp The Social Network',
     description: 'A social network platform exclusively dedicated to people of the Asexual spectrum. Connect with ACEs globally, create profiles, search based on location/gender/age filters, and start chats to share experiences and interests. ACEapp also functions as a dating app for the asexual community, helping users find chat pals, friends, or potential relationships in a supportive environment.',
     icon: 'https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/8d/e1/b9/8de1b9ce-701e-ccfc-ddf6-17f1fd712816/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/400x400ia-75.webp',
-    technologies: ['Swift', 'SwiftUI', 'UIKit', 'Firebase', 'REST APIs'],
+    technologies: ['Swift', 'UIKit', 'Firebase', 'REST APIs'],
     appStoreLink: 'https://apps.apple.com/in/app/aceapp-the-social-network/id1391046754',
     githubLink: '',
     workedOn: [
