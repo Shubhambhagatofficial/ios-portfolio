@@ -7,4 +7,9 @@ export default defineConfig({
   // For GitHub Pages: use '/repository-name/' if deploying to a project page
   // Use '/' if deploying to username.github.io
   base: process.env.NODE_ENV === 'production' ? '/ios-portfolio/' : '/',
+  publicDir: 'public',
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+  },
 })
