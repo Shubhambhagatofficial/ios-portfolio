@@ -81,7 +81,6 @@ const Contact = () => {
             </svg>
             <div>
               <h3>WhatsApp</h3>
-              <p>+1 (234) 567-890</p>
             </div>
           </a>
         </div>
