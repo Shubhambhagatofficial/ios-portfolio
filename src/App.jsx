@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { ThemeProvider } from './context/ThemeContext'
 import Hero from './components/Hero'
 import AppsSection from './components/AppsSection'
 import AppDetail from './components/AppDetail'
@@ -11,25 +12,27 @@ function App() {
   const basename = import.meta.env.PROD ? '/ios-portfolio' : ''
 
   return (
-    <Router basename={basename}>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={
-            <>
-              <Hero />
-              <AppsSection />
-              <Footer />
-            </>
-          } />
-          <Route path="/app/:id" element={
-            <>
-              <AppDetail />
-              <Footer />
-            </>
-          } />
-        </Routes>
-      </div>
-    </Router>
+    <ThemeProvider>
+      <Router basename={basename}>
+        <div className="App">
+          <Routes>
+            <Route path="/" element={
+              <>
+                <Hero />
+                <AppsSection />
+                <Footer />
+              </>
+            } />
+            <Route path="/app/:id" element={
+              <>
+                <AppDetail />
+                <Footer />
+              </>
+            } />
+          </Routes>
+        </div>
+      </Router>
+    </ThemeProvider>
   )
 }
 
