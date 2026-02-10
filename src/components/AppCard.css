@@ -1,9 +1,9 @@
 .app-card {
-  background: #1a1a1a;
+  background: var(--card-bg);
   border-radius: 16px;
   padding: 2rem;
   transition: all 0.3s ease;
-  border: 1px solid #2a2a2a;
+  border: 1px solid var(--border-color);
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -23,8 +23,8 @@
 
 .app-card:hover {
   transform: translateY(-8px);
-  border-color: #3a3a3a;
-  box-shadow: 0 20px 40px rgba(97, 62, 238, 0.1);
+  border-color: var(--border-hover);
+  box-shadow: 0 20px 40px var(--shadow-hover);
 }
 
 .app-card:hover::before {
@@ -65,12 +65,12 @@
 .app-name {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--text-primary);
   margin: 0;
 }
 
 .app-description {
-  color: #888;
+  color: var(--text-tertiary);
   line-height: 1.6;
   min-height: 60px;
   font-size: 0.95rem;
@@ -85,7 +85,7 @@
 
 .tech-tag {
   background: rgba(0, 122, 255, 0.1);
-  color: #007AFF;
+  color: var(--accent-color);
   padding: 0.25rem 0.75rem;
   border-radius: 12px;
   font-size: 0.85rem;
@@ -109,22 +109,22 @@
 }
 
 .app-store-link {
-  background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
+  background: var(--gradient-primary);
   color: white;
 }
 
 .app-store-link:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0, 122, 255, 0.4);
+  box-shadow: 0 4px 12px var(--shadow-hover);
 }
 
 .github-link {
   background: transparent;
-  color: #888;
-  border: 1px solid #2a2a2a;
+  color: var(--text-tertiary);
+  border: 1px solid var(--border-color);
 }
 
 .github-link:hover {
-  border-color: #3a3a3a;
-  color: #ffffff;
+  border-color: var(--border-hover);
+  color: var(--text-primary);
 }

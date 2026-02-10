@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
+import ThemeToggle from './ThemeToggle'
 import './AppDetail.css'
 
 // Import app data - in a real app, this would come from a data store or API
@@ -23,6 +24,7 @@ const AppDetail = () => {
   if (!app) {
     return (
       <div className="app-detail-container">
+        <ThemeToggle />
         <div className="app-detail-content">
           <h1>App not found</h1>
           <button onClick={handleBackClick} className="back-button">
@@ -35,6 +37,7 @@ const AppDetail = () => {
 
   return (
     <div className="app-detail-container">
+      <ThemeToggle />
       <div className="app-detail-content">
         <button onClick={handleBackClick} className="back-button">
           ← Back to Portfolio

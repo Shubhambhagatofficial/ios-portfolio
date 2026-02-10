@@ -1,9 +1,11 @@
 import React from 'react'
+import ThemeToggle from './ThemeToggle'
 import './Hero.css'
 
 const Hero = () => {
   return (
     <section className="hero">
+      <ThemeToggle />
       <div className="hero-container">
         <div className="hero-content">
           <h1 className="hero-title">

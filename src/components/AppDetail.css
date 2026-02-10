@@ -1,8 +1,9 @@
 .app-detail-container {
   min-height: 100vh;
-  background: #0f0f0f;
+  background: var(--bg-secondary);
   padding: 2rem;
-  color: #ffffff;
+  color: var(--text-primary);
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .app-detail-content {
@@ -13,8 +14,8 @@
 
 .back-button {
   background: transparent;
-  border: 1px solid #2a2a2a;
-  color: #888;
+  border: 1px solid var(--border-color);
+  color: var(--text-tertiary);
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   font-size: 1rem;
@@ -25,8 +26,8 @@
 }
 
 .back-button:hover {
-  border-color: #3a3a3a;
-  color: #ffffff;
+  border-color: var(--border-hover);
+  color: var(--text-primary);
   transform: translateX(-4px);
 }
 
@@ -36,7 +37,7 @@
   align-items: flex-start;
   margin-bottom: 3rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid #2a2a2a;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .app-detail-icon {
@@ -72,7 +73,7 @@
   font-size: 2.5rem;
   font-weight: 700;
   margin: 0 0 1rem 0;
-  background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -86,7 +87,7 @@
 
 .tech-tag-large {
   background: rgba(0, 122, 255, 0.1);
-  color: #007AFF;
+  color: var(--accent-color);
   padding: 0.5rem 1rem;
   border-radius: 12px;
   font-size: 0.9rem;
@@ -100,23 +101,23 @@
 }
 
 .app-detail-section {
-  background: #1a1a1a;
+  background: var(--card-bg);
   border-radius: 16px;
   padding: 2rem;
-  border: 1px solid #2a2a2a;
+  border: 1px solid var(--border-color);
 }
 
 .app-detail-section-title {
   font-size: 1.5rem;
   font-weight: 600;
   margin: 0 0 1.5rem 0;
-  color: #ffffff;
+  color: var(--text-primary);
   padding-bottom: 1rem;
-  border-bottom: 1px solid #2a2a2a;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .app-detail-description {
-  color: #cccccc;
+  color: var(--text-secondary);
   line-height: 1.8;
   font-size: 1.05rem;
   margin: 0;
@@ -132,7 +133,7 @@
 }
 
 .worked-on-item {
-  color: #cccccc;
+  color: var(--text-secondary);
   line-height: 1.8;
   font-size: 1.05rem;
   padding-left: 1.5rem;
@@ -143,7 +144,7 @@
   content: '▸';
   position: absolute;
   left: 0;
-  color: #007AFF;
+  color: var(--accent-color);
   font-weight: bold;
 }
 
@@ -165,24 +166,24 @@
 }
 
 .app-link-large.app-store-link {
-  background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
+  background: var(--gradient-primary);
   color: white;
 }
 
 .app-link-large.app-store-link:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 122, 255, 0.4);
+  box-shadow: 0 8px 20px var(--shadow-hover);
 }
 
 .app-link-large.github-link {
   background: transparent;
-  color: #888;
-  border: 1px solid #2a2a2a;
+  color: var(--text-tertiary);
+  border: 1px solid var(--border-color);
 }
 
 .app-link-large.github-link:hover {
-  border-color: #3a3a3a;
-  color: #ffffff;
+  border-color: var(--border-hover);
+  color: var(--text-primary);
 }
 
 @media (max-width: 768px) {

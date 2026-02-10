@@ -3,10 +3,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+  background: var(--gradient-hero);
   padding: 2rem;
   position: relative;
   overflow: hidden;
+  transition: background 0.3s ease;
 }
 
 .hero::before {
@@ -36,7 +37,7 @@
   font-size: 4rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
+  background: var(--gradient-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -56,14 +57,14 @@
 
 .hero-subtitle {
   font-size: 1.5rem;
-  color: #a0a0a0;
+  color: var(--text-tertiary);
   margin-bottom: 1.5rem;
   font-weight: 300;
 }
 
 .hero-description {
   font-size: 1.1rem;
-  color: #888;
+  color: var(--text-tertiary);
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.8;
