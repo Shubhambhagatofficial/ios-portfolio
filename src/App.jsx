@@ -4,6 +4,8 @@ import { ThemeProvider } from './context/ThemeContext'
 import Hero from './components/Hero'
 import AppsSection from './components/AppsSection'
 import AppDetail from './components/AppDetail'
+import MyProfile from './components/MyProfile'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
 import './App.css'
 
@@ -19,7 +21,9 @@ function App() {
             <Route path="/" element={
               <>
                 <Hero />
+                <MyProfile />
                 <AppsSection />
+                <Contact />
                 <Footer />
               </>
             } />
