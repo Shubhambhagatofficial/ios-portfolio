@@ -6,6 +6,7 @@ import AppsSection from './components/AppsSection'
 import AppDetail from './components/AppDetail'
 import MyProfile from './components/MyProfile'
 import Contact from './components/Contact'
+import Games from './components/Games'
 import Footer from './components/Footer'
 import './App.css'
 
@@ -24,6 +25,7 @@ function App() {
                 <MyProfile />
                 <AppsSection />
                 <Contact />
+                <Games />
                 <Footer />
               </>
             } />
