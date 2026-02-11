@@ -20,7 +20,7 @@ const Hero = () => {
             Crafting beautiful and intuitive mobile experiences
           </p>
           <p className="hero-description">
-            A seasoned iOS developer with over 4.5 years of experience developing large-scale applications. 
+            A seasoned iOS developer with around 5 years of experience developing large-scale applications. 
             Expertise in Swift and SwiftUI, leading architecture and migrations for Angel One, Furlenco, and CREX. 
             Developed and published apps serving 7M+ daily active users. Passionate about optimizing user experiences 
             through advanced coding practices and team leadership.

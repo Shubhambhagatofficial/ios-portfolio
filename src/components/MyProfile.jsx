@@ -10,7 +10,7 @@ const MyProfile = () => {
         <div className="profile-content">
           <div className="profile-text">
             <p className="profile-description">
-              I have around 5 years of experience developing large-scale applications in iOS.
+              I have around 5 years of professional experience developing large-scale applications in iOS.
               Expertise in Swift and SwiftUI, leading architecture and migrations for Angel One, Furlenco, and CREX. 
               Developed and published apps serving 7M+ daily active users.
             </p>
@@ -18,17 +18,18 @@ const MyProfile = () => {
             <div className="profile-details">
               <div className="detail-item">
                 <h3>Experience</h3>
-                <p>4.5+ Years in iOS Development</p>
+                <p>~5 Years in iOS Development</p>
               </div>
               
               <div className="detail-item">
                 <h3>Specialization</h3>
-                <p>Swift, SwiftUI, Architecture</p>
+                <p>Swift, SwiftUI, UIKit, iOS, GoLang</p>
               </div>
               
               <div className="detail-item">
                 <h3>Impact</h3>
                 <p>7M+ Daily Active Users</p>
+                <p>App Store Published Apps: 5</p>
               </div>
             </div>
 
