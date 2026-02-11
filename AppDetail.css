@@ -1,0 +1,238 @@
+.app-detail-container {
+  min-height: 100vh;
+  background: var(--bg-secondary);
+  padding: 2rem;
+  color: var(--text-primary);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.app-detail-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.back-button {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-tertiary);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+  font-family: inherit;
+}
+
+.back-button:hover {
+  border-color: var(--border-hover);
+  color: var(--text-primary);
+  transform: translateX(-4px);
+}
+
+.app-detail-header {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.app-detail-icon {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+}
+
+.app-detail-icon-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.app-icon-default {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  opacity: 0.3;
+}
+
+.app-detail-title-section {
+  flex: 1;
+}
+
+.app-detail-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.app-detail-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tech-tag-large {
+  background: rgba(0, 122, 255, 0.1);
+  color: var(--accent-color);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  border: 1px solid rgba(0, 122, 255, 0.2);
+}
+
+.app-detail-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.app-detail-section {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+}
+
+.app-detail-section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 1.5rem 0;
+  color: var(--text-primary);
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.app-detail-description {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.worked-on-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.worked-on-item {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1.05rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.worked-on-item::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.app-detail-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.app-link-large {
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.app-link-large.app-store-link {
+  background: var(--gradient-primary);
+  color: white;
+}
+
+.app-link-large.app-store-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px var(--shadow-hover);
+}
+
+.app-link-large.github-link {
+  background: transparent;
+  color: var(--text-tertiary);
+  border: 1px solid var(--border-color);
+}
+
+.app-link-large.github-link:hover {
+  border-color: var(--border-hover);
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .app-detail-container {
+    padding: 1rem;
+  }
+
+  .app-detail-content {
+    padding: 1rem 0;
+  }
+
+  .app-detail-header {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .app-detail-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+
+  .app-detail-name {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .app-detail-technologies {
+    justify-content: center;
+  }
+
+  .app-detail-section {
+    padding: 1.5rem;
+  }
+
+  .app-detail-section-title {
+    font-size: 1.25rem;
+  }
+
+  .app-detail-description,
+  .worked-on-item {
+    font-size: 1rem;
+  }
+
+  .app-detail-links {
+    flex-direction: column;
+  }
+
+  .app-link-large {
+    text-align: center;
+  }
+}

@@ -1,0 +1,283 @@
+.app-card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid var(--border-color);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+}
+
+/* Mobile: Show full content without hover */
+@media (max-width: 768px) {
+  .app-card {
+    aspect-ratio: auto;
+    min-height: auto;
+    height: auto;
+  }
+
+  .app-card-content {
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    gap: 1rem;
+  }
+
+  .app-icon-placeholder {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0.5rem;
+  }
+
+  .app-name {
+    font-size: 1.5rem;
+  }
+
+  .app-description {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 0.5rem;
+  }
+
+  .app-technologies {
+    justify-content: flex-start;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .tech-tag {
+    font-size: 0.85rem;
+  }
+
+  .app-links {
+    justify-content: flex-start;
+    margin-top: 1rem;
+  }
+
+  .app-link {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .app-link.github-link {
+    display: flex;
+  }
+
+  .app-card::before {
+    transform: scaleX(1);
+  }
+}
+
+/* Ensure non-hovered cards maintain square shape */
+.apps-grid:has(.app-card:hover) .app-card:not(:hover) {
+  aspect-ratio: 1 / 1;
+  height: auto;
+}
+
+.app-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #be30ce 0%, #5856D6 100%);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.app-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--border-hover);
+  box-shadow: 0 20px 40px var(--shadow-hover);
+  z-index: 10;
+  aspect-ratio: auto;
+  height: auto;
+  min-height: 450px;
+}
+
+.app-card:hover::before {
+  transform: scaleX(1);
+}
+
+.app-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  transition: justify-content 0.7s cubic-bezier(0.4, 0, 0.2, 1), 
+              align-items 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+              gap 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.app-card:hover .app-card-content {
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  gap: 1rem;
+}
+
+.app-icon-placeholder {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 0.5rem;
+  flex-shrink: 0;
+  transition: width 0.7s cubic-bezier(0.4, 0, 0.2, 1), 
+              height 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+              margin-bottom 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.app-card:hover .app-icon-placeholder {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 0.5rem;
+}
+
+.app-icon {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.app-icon-default {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  opacity: 0.3;
+}
+
+.app-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+  flex-shrink: 0;
+  transition: font-size 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.app-card:hover .app-name {
+  font-size: 1.5rem;
+}
+
+.app-description {
+  color: var(--text-tertiary);
+  line-height: 1.6;
+  font-size: 0.95rem;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.7s cubic-bezier(0.4, 0, 0.2, 1), 
+              opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+              margin 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0;
+}
+
+.app-card:hover .app-description {
+  max-height: 200px;
+  opacity: 1;
+  margin-top: 0.5rem;
+}
+
+.app-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+  opacity: 1;
+  transition: margin 0.7s cubic-bezier(0.4, 0, 0.2, 1), 
+              gap 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0.5rem 0 0 0;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.app-card:hover .app-technologies {
+  margin-top: 0.5rem;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  background: rgba(0, 122, 255, 0.1);
+  color: var(--accent-color);
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  border: 1px solid rgba(0, 122, 255, 0.2);
+  transition: font-size 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.app-card:hover .tech-tag {
+  font-size: 0.85rem;
+}
+
+.app-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+  flex-wrap: wrap;
+  opacity: 1;
+  transition: margin 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 1rem 0 0 0;
+  justify-content: center;
+}
+
+.app-card:hover .app-links {
+  margin-top: 1rem;
+  justify-content: flex-start;
+}
+
+.app-link {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.app-card:not(:hover) .app-link {
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+}
+
+.app-card:not(:hover) .app-link.github-link {
+  display: none;
+}
+
+.app-store-link {
+  background: var(--gradient-primary);
+  color: white;
+}
+
+.app-store-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px var(--shadow-hover);
+}
+
+.github-link {
+  background: transparent;
+  color: var(--text-tertiary);
+  border: 1px solid var(--border-color);
+}
+
+.github-link:hover {
+  border-color: var(--border-hover);
+  color: var(--text-primary);
+}
