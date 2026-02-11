@@ -1,6 +1,7 @@
 import React from 'react'
 import Menu from './Menu'
 import ThemeToggle from './ThemeToggle'
+import cvPdf from '/Shubham_Kumar_CV.pdf'
 import './Hero.css'
 
 const Hero = () => {
@@ -25,6 +26,15 @@ const Hero = () => {
             Developed and published apps serving 7M+ daily active users. Passionate about optimizing user experiences 
             through advanced coding practices and team leadership.
           </p>
+          <div className="hero-actions">
+            <a
+              href={cvPdf}
+              download
+              className="cv-button"
+            >
+              Download My CV
+            </a>
+          </div>
         </div>
       </div>
     </section>
