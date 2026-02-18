@@ -10,7 +10,7 @@ export const builtFromScratch = [
     appStoreLink: 'https://apps.apple.com/us/app/crex-just-cricket/id1370408703',
     githubLink: '',
     workedOn: [
-      'Engineered and deployed Cricket Exchange (CREX) as a solo developer - achieved 99.9% crash-free rate with 25M+ downloads',
+      'Engineered and deployed Cricket Exchange (CREX) - achieved 99.9% crash-free rate with 25M+ downloads',
       'Managed complete App Store publishing and release cycles',
       'Built CE Fantasy and One Cricket apps as part of a 2-person team',
       'Designed and implemented custom notifications, Today Widgets, and in-app purchases',
@@ -59,7 +59,7 @@ export const contributedHeavily = [
     name: 'Furlenco',
     description: 'An online furniture rental and purchase platform offering flexible options to rent short-term, rent long-term, buy brand new, or buy refurbished furniture. Features comprehensive furniture categories including bedroom, dining room, living room, study room, storage solutions, and outdoor seating. Includes 72-hour free delivery and installation, no-cost EMI, damage waiver, manufacturer warranty, and rent-to-own options. Available across major Indian cities.',
     icon: 'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/dc/05/76/dc05767d-a075-134a-875d-fe9b4d686f3c/Placeholder.mill/400x400bb-75.webp',
-    technologies: ['Swift', 'SwiftUI', 'UIKit', 'Payment Integration', 'REST APIs'],
+    technologies: ['SwiftUI', 'UIKit', 'Payment Integration', 'REST APIs'],
     appStoreLink: 'https://apps.apple.com/in/app/furlenco/id1134919232',
     githubLink: '',
     workedOn: [
@@ -76,7 +76,7 @@ export const contributedHeavily = [
     name: 'Angel One: Stocks, Mutual Fund',
     description: 'A comprehensive stock market trading and investment platform trusted by 3 crore+ Indians. Features include free Demat account opening, seamless stock trading across 5000+ stocks, live NIFTY 50 and Sensex updates, mutual funds and SIP investments, IPO applications, Futures & Options trading, US stocks, commodities, currencies, and bonds. Includes smart order options, instant fund transfers via UPI, personal loans, motor insurance, and advanced charting with trading insights. Built on 25+ years of experience in the financial markets.',
     icon: 'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/60/64/c4/6064c45b-f538-1ef1-148f-44552f5ef83c/Placeholder.mill/400x400bb-75.webp',
-    technologies: ['Swift', 'SwiftUI', 'UIKit', 'Payment Integration', 'Real-time Data', 'REST APIs'],
+    technologies: ['SwiftUI', 'UIKit', 'Payment Integration', 'Real-time Data', 'REST APIs'],
     appStoreLink: 'https://apps.apple.com/in/app/angel-one-stocks-mutual-fund/id1060530981',
     githubLink: '',
     workedOn: [
