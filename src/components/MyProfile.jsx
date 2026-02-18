@@ -9,11 +9,13 @@ const MyProfile = () => {
         
         <div className="profile-content">
           <div className="profile-text">
-            <p className="profile-description">
-              I have around 5 years of professional experience developing large-scale applications in iOS.
-              Expertise in Swift and SwiftUI, leading architecture and migrations for Angel One, Furlenco, and CREX. 
-              Developed and published apps serving 7M+ daily active users.
-            </p>
+            <ul className="profile-description-list">
+              <li>~5 years of professional iOS development experience building large-scale, production-grade applications</li>
+              <li>Expert in Swift & SwiftUI with deep proficiency in UIKit, MVVM, and VIPER architecture patterns</li>
+              <li>Led architecture design and major migrations at Angel One, Furlenco, and CREX — driving performance, scalability, and code quality</li>
+              <li>Published 5 apps on the App Store, collectively serving <strong>7M+ daily active users</strong></li>
+              <li>Experienced team lead — managing engineering teams, mentoring developers, and delivering features at scale</li>
+            </ul>
             
             <div className="profile-details">
               <div className="detail-item">
@@ -36,23 +38,23 @@ const MyProfile = () => {
             <div className="profile-skills">
               <h3>Key Skills</h3>
               <div className="skills-list">
-                <span className="skill-tag">SwiftUI</span>
-                <span className="skill-tag">UIKit</span>
-                <span className="skill-tag">MVVM</span>
-                <span className="skill-tag">VIPER</span>
-                <span className="skill-tag">Go</span>
-                <span className="skill-tag">Claude AI</span>
-                <span className="skill-tag">AI Tools</span>
-                <span className="skill-tag">SWIFT</span>
-                <span className="skill-tag">Spring Boot</span>
-                <span className="skill-tag">Team Leader</span>
-                <span className="skill-tag">App Management</span>
-                <span className="skill-tag">Cursor</span>
-                <span className="skill-tag">Combine</span>
-                <span className="skill-tag">Core Data</span>
-                <span className="skill-tag">REST APIs</span>
-                <span className="skill-tag">Git</span>
-                <span className="skill-tag">CI/CD</span>
+                <span className="skill-tag">SwiftUI <span className="skill-years">4y</span></span>
+                <span className="skill-tag">UIKit <span className="skill-years">6y</span></span>
+                <span className="skill-tag">MVVM <span className="skill-years">6y</span></span>
+                <span className="skill-tag">VIPER <span className="skill-years">4y</span></span>
+                <span className="skill-tag">Go <span className="skill-years">2y</span></span>
+                <span className="skill-tag">Claude AI <span className="skill-years">1y</span></span>
+                <span className="skill-tag">AI Tools <span className="skill-years">1y</span></span>
+                <span className="skill-tag">SWIFT <span className="skill-years">6y</span></span>
+                <span className="skill-tag">Spring Boot <span className="skill-years">3y</span></span>
+                <span className="skill-tag">Team Leader <span className="skill-years">6y</span></span>
+                <span className="skill-tag">App Management <span className="skill-years">6y</span></span>
+                <span className="skill-tag">Cursor <span className="skill-years">1y</span></span>
+                <span className="skill-tag">Combine <span className="skill-years">4y</span></span>
+                <span className="skill-tag">Core Data <span className="skill-years">6y</span></span>
+                <span className="skill-tag">REST APIs <span className="skill-years">6y</span></span>
+                <span className="skill-tag">Git <span className="skill-years">6y</span></span>
+                <span className="skill-tag">CI/CD <span className="skill-years">4y</span></span>
               </div>
             </div>
 

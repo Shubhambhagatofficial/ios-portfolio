@@ -66,7 +66,7 @@ const Contact = () => {
             </svg>
             <div>
               <h3>Phone</h3>
-              <p>Call Me</p>
+              <p>Tap here to call me</p>
             </div>
           </a>
 
@@ -81,6 +81,7 @@ const Contact = () => {
             </svg>
             <div>
               <h3>WhatsApp</h3>
+              <p>Tap here to whatsapp me</p>
             </div>
           </a>
         </div>

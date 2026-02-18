@@ -43,6 +43,23 @@
   align-items: start;
 }
 
+.apps-grid--centered {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.apps-grid--centered > * {
+  width: 320px;
+  flex-shrink: 0;
+}
+
+.apps-grid--centered .app-card {
+  aspect-ratio: auto;
+  height: auto;
+  min-height: 320px;
+}
+
 @media (min-width: 1200px) {
   .apps-grid {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

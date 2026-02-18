@@ -49,7 +49,7 @@ const AppsSection = () => {
           <p className="apps-section-subtitle">
             Apps where I've made significant contributions and improvements
           </p>
-          <div className="apps-grid">
+          <div className="apps-grid apps-grid--centered">
             {contributedHeavily.map((app) => (
               <AppCard key={app.id} app={app} />
             ))}

@@ -15,6 +15,11 @@ const AppCard = ({ app }) => {
     navigate(`/app/${app.id}`)
   }
 
+  const handleViewDetails = () => {
+    sessionStorage.setItem('homeScrollPosition', window.scrollY.toString())
+    navigate(`/app/${app.id}`)
+  }
+
   return (
     <div className="app-card" onClick={handleCardClick}>
       <div className="app-card-content">
@@ -49,9 +54,9 @@ const AppCard = ({ app }) => {
         
         <div className="app-links" onClick={(e) => e.stopPropagation()}>
           {app.appStoreLink && (
-            <a 
-              href={app.appStoreLink} 
-              target="_blank" 
+            <a
+              href={app.appStoreLink}
+              target="_blank"
               rel="noopener noreferrer"
               className="app-link app-store-link"
             >
@@ -59,15 +64,18 @@ const AppCard = ({ app }) => {
             </a>
           )}
           {app.githubLink && (
-            <a 
-              href={app.githubLink} 
-              target="_blank" 
+            <a
+              href={app.githubLink}
+              target="_blank"
               rel="noopener noreferrer"
               className="app-link github-link"
             >
               GitHub
             </a>
           )}
+          <button className="app-link details-btn" onClick={handleViewDetails}>
+            View Details
+          </button>
         </div>
       </div>
     </div>

@@ -213,12 +213,12 @@
 }
 
 .tech-tag {
-  background: rgba(0, 122, 255, 0.1);
+  background: var(--accent-bg, rgba(0, 122, 255, 0.1));
   color: var(--accent-color);
   padding: 0.25rem 0.75rem;
   border-radius: 12px;
   font-size: 0.75rem;
-  border: 1px solid rgba(0, 122, 255, 0.2);
+  border: 1px solid var(--accent-border, rgba(0, 122, 255, 0.2));
   transition: font-size 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -281,3 +281,19 @@
   border-color: var(--border-hover);
   color: var(--text-primary);
 }
+
+.details-btn {
+  background: transparent;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.details-btn:hover {
+  background: linear-gradient(90deg, #be30ce 0%, #5856D6 100%);
+  border-color: transparent;
+  color: white;
+  transform: scale(1.05);
+}
+
