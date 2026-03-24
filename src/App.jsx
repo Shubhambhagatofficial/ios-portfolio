@@ -11,8 +11,8 @@ import Footer from './components/Footer'
 import './App.css'
 
 function App() {
-  // Get the base path for GitHub Pages
-  const basename = import.meta.env.PROD ? '/ios-portfolio' : ''
+  // Must match vite.config.js `base` (custom domain uses `/`; project pages use `/repo/`)
+  const basename = import.meta.env.BASE_URL.replace(/\/$/, '')
 
   return (
     <ThemeProvider>
