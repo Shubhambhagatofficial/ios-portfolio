@@ -74,7 +74,7 @@ const AppCard = ({ app }) => {
             </a>
           )}
           <button className="app-link details-btn" onClick={handleViewDetails}>
-            View Details
+            My Work
           </button>
         </div>
       </div>

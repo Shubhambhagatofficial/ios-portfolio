@@ -1,8 +1,10 @@
 import React from 'react'
 import Menu from './Menu'
 import ThemeToggle from './ThemeToggle'
-import cvPdf from '/Shubham_Kumar_CV.pdf'
 import './Hero.css'
+
+// Public file: add `public/Shubham_Kumar_CV.pdf` for the download to work (not imported — avoids build failure if missing).
+const cvPdf = `${import.meta.env.BASE_URL}Shubham_Kumar_CV.pdf`.replace(/\/{2,}/g, '/')
 
 const Hero = () => {
   return (
