@@ -11,8 +11,8 @@ import Footer from './components/Footer'
 import './App.css'
 
 function App() {
-  // Must match vite.config.js `base` (custom domain uses `/`; project pages use `/repo/`)
-  const basename = import.meta.env.BASE_URL.replace(/\/$/, '')
+  // Must match vite.config.js `base` — empty for `/` (custom domain). Do not use `/ios-portfolio` here unless `base` is `/ios-portfolio/`.
+  const basename = ''
 
   return (
     <ThemeProvider>
